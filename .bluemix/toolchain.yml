@@ -23,11 +23,11 @@ toolchain:
       $ref: "#/messages/template.gettingStarted" 
 services:
   hello-world-repo:
-    service_id: hostedgit
+    service_id: gitconsolidated
     parameters:
       repo_name: 'hello-containers-{{timestamp}}'
       repo_url: 'https://github.com/open-toolchain/hello-containers'
-      type: clone
+      type: existing
       has_issues: true
       enable_traceability: true
   hello-world-build:
